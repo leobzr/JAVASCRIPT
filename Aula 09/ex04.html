@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(133, 133, 212);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com <strong>DOM</strong></h1>
+    <p>aqui vai o resultado</p>
+    <p>testando uma coisa</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'red'
+        var corpo = window.document.body
+        document.write(p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'Green'
+        d.innerText = 'Estou aguardando...'
+    </script>
+</body>
+</html>
