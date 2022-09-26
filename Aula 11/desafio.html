@@ -26,11 +26,9 @@
         var res = document.querySelector('div#res')
 
         function ver_pais() {
-            if (p == 'Brasil') {
+            if (p.value == 'Brasil') {
                 res.innerHTML = `Você é definitivamente brasileiro!`
-            }  
-            
-            else {
+            }  else {
                 res.innerHTML = `Você é um estrangeiro morando no Brasil! Espero que goste do país!`
             }
         }
