@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando Nacionalidade.</h1>
+    <p>Vivevendo no Brasil. Deseja verificar a sua nacionalidade?</p>
+    <p>Digite o nome do seu país por extenso. Ex: Brasil.</p>
+    <input type="text" id="pais">
+    <input type="submit" value="Verificar" onclick="ver_pais()">
+    <div id="res">Resultados aqui!</div>
+    <script>
+        var p = document.getElementById('pais')
+        var res = document.querySelector('div#res')
+
+        function ver_pais() {
+            if (p == 'Brasil') {
+                res.innerHTML = `Você é definitivamente brasileiro!`
+            }  
+            
+            else {
+                res.innerHTML = `Você é um estrangeiro morando no Brasil! Espero que goste do país!`
+            }
+        }
+    </script>
+</body>
+</html>
